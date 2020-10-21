@@ -236,10 +236,43 @@ body {
 }
 
 /* Latest Funding Section */
+.latest-funding-wrapper {
+  padding: 20px;
 
+}
 .latest-funding-articles {
-  min-height: 246px;
-  background-color: #0f8;
+  position: relative;
+}
+
+.latest-funding-articles h4 {
+  height: 40px;
+  padding-left: 80px;
+  background-color: #f42;
+}
+
+.latest-funding-articles div:nth-of-type(1) {
+  height: 60px;
+  padding-left: 80px;
+  background-color: #f421;
+}
+
+.latest-funding-articles img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  /* transform: translateY(-100px); */
+}
+
+.latest-funding-articles div:nth-of-type(2) {
+  padding: 16px;
+  border-bottom: 1px solid #f42;
+}
+
+.latest-funding-description {
+  padding: 10px 16px 16px;
 }
 
 /* Most Popular Section */
