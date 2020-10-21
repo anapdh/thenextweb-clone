@@ -33,6 +33,14 @@ body {
   height: 100%;
 }
 
+.color-white {
+  color: #fff;
+}
+
+.color-gray {
+  color: #999;
+}
+
 .sub-headings {
   font-size: 2em;
   font-weight: bold;
@@ -78,12 +86,16 @@ body {
 
 /* MAIN SECTION */
 
-.main-articles-section {
+/* .main-articles-section {
   grid-template-areas:
     "main-img-1"
     "main-img-2"
     "main-img-3";
   gap: 4px;
+} */
+
+.main-articles-section {
+  grid-template-columns: 1fr;
 }
 
 .main-img-1 {
@@ -93,8 +105,24 @@ body {
 }
 
 .main-logo {
-  width: 50%;
+  max-width: 50%;
   padding: 20px;
+}
+
+.article-date {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.article-text {
+  max-width: 60%;
+}
+
+.main-img-1 h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .main-img-2 {
@@ -112,12 +140,26 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .main-articles-section {
+  /* .main-articles-section {
     grid-template-areas:
       "main-img-1 main-img-2"
       "main-img-1 main-img-3";
-  }
-}
+  }*/
+    .main-articles-section {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 200px 200px;
+    }
+
+    .main-img-1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+
+} 
+
+
+
+
 
 /* LATEST NEWS SECTION */
 
@@ -132,6 +174,49 @@ body {
 .latest-news-articles {
   min-height: 88px;
   background-color: #fa4;
+  align-items: center;
+}
+
+.latest-news-img {
+  display: block;
+  min-width: 74px;
+  max-width: 74px;
+  height: 74px;
+  background-position: center;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.background-img1 {
+  background-image: url("/assets/images/latest-news-1.jpg");
+}
+
+.background-img2 {
+  background-image: url("/assets/images/latest-news-2.jpeg");
+}
+
+.background-img3 {
+  background-image: url("/assets/images/latest-news-3.jpg");
+}
+
+.background-img4 {
+  background-image: url("/assets/images/latest-news-4.jpg");
+}
+
+.background-img5 {
+  background-image: url("/assets/images/latest-news-5.png");
+}
+
+.background-img6 {
+  background-image: url("/assets/images/latest-news-6.jpg");
+}
+
+.background-img7 {
+  background-image: url("/assets/images/latest-news-7.png");
+}
+
+.background-img8 {
+  background-image: url("/assets/images/latest-news-8.png");
 }
 
 @media screen and (min-width: 768px) {
