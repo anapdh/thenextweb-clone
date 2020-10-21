@@ -3,7 +3,18 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.fas {
+  font-family: 'Font Awesome 5 Free';
 }
 
 .d-flex {
