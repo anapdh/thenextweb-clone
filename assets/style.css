@@ -188,35 +188,35 @@ body {
 }
 
 .background-img1 {
-  background-image: url(/assets/images/latest-news-1.jpg);
+  background-image: url(../assets/images/latest-news-1.jpg);
 }
 
 .background-img2 {
-  background-image: url(/assets/images/latest-news-2.jpeg);
+  background-image: url(../assets/images/latest-news-2.jpeg);
 }
 
 .background-img3 {
-  background-image: url(/assets/images/latest-news-3.jpg);
+  background-image: url(../assets/images/latest-news-3.jpg);
 }
 
 .background-img4 {
-  background-image: url(/assets/images/latest-news-4.jpg);
+  background-image: url(../assets/images/latest-news-4.jpg);
 }
 
 .background-img5 {
-  background-image: url(/assets/images/latest-news-5.png);
+  background-image: url(../assets/images/latest-news-5.png);
 }
 
 .background-img6 {
-  background-image: url(/assets/images/latest-news-6.jpg);
+  background-image: url(../assets/images/latest-news-6.jpg);
 }
 
 .background-img7 {
-  background-image: url(/assets/images/latest-news-7.png);
+  background-image: url(../assets/images/latest-news-7.png);
 }
 
 .background-img8 {
-  background-image: url(/assets/images/latest-news-8.png);
+  background-image: url(../assets/images/latest-news-8.png);
 }
 
 @media screen and (min-width: 768px) {
