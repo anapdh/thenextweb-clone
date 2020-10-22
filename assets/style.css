@@ -14,6 +14,10 @@ header {
   z-index: 2;
 }
 
+section {
+  padding: 0 8px;
+}
+
 .fab {
   font-family: 'Font Awesome 5 Brands';
 }
@@ -106,6 +110,7 @@ header {
 
 .main-articles-section {
   grid-template-columns: 1fr;
+  margin-bottom: 10px;
 }
 
 .main-img-1 {
@@ -247,8 +252,6 @@ header {
 
 /* Latest Funding Section */
 .latest-funding-wrapper {
-  padding: 20px;
-
 }
 .latest-funding-articles {
   position: relative;
@@ -396,8 +399,8 @@ header {
 
 .latest-img {
   display: block;
-  width: 96px;
-  height: 96px;
+  min-width: 96px;
+  min-height: 96px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -442,7 +445,6 @@ header {
 
 .most-popular-section ul {
   padding: 8px;
-  text-indent: 0;
 }
 
 .most-popular-section li {
