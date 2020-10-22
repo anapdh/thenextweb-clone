@@ -9,6 +9,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  position: fixed;
+  z-index: 2;
+}
+
 .fab {
   font-family: 'Font Awesome 5 Brands';
 }
@@ -45,6 +50,11 @@ body {
   font-size: 2em;
   font-weight: bold;
   color: #f42;
+  margin-bottom: 24px;
+}
+
+.f-bold {
+  font-weight: bold;
 }
 
 .navbar {
@@ -284,19 +294,110 @@ body {
 .most-popular-articles {
   min-height: 688px;
   padding: 8px;
-
-  background-color: #eee;
 }
 
 .most-popular-image {
   display: block;
   position: relative;
-  background-image: url(../assets/images/most-popular-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding-top: 50%;
+  padding: 50% 5% 12px 12px;
+}
+
+.most-popular-image-1 {
+  background-image: url(../assets/images/most-popular-1.jpg);
+}
+
+.most-popular-image-2 {
+  background-image: url(../assets/images/most-popular-2.jpg);
+}
+
+.most-popular-image-3 {
+  background-image: url(../assets/images/most-popular-3.jpg);
+}
+
+.most-popular-image-4 {
+  background-image: url(../assets/images/most-popular-4.png);
+}
+
+.most-popular-image-5 {
+  background-image: url(../assets/images/most-popular-5.jpg);
+}
+
+.most-popular-image-6 {
+  background-image: url(../assets/images/most-popular-6.png);
+}
+
+.most-popular-image-7 {
+  background-image: url(../assets/images/most-popular-7.jpg);
+}
+
+.most-popular-image-8 {
+  background-image: url(../assets/images/most-popular-8.jpg);
+}
+
+.most-popular-image-9 {
+  background-image: url(../assets/images/most-popular-9.jpg);
+}
+
+.most-popular-image h2{
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.most-popular-image p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.most-popular-image a {
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+}
+
+
+.most-popular-latest {
+  background-color: #fff4f2;
+  height: 96px;
+  padding: 8px;
+  color: #f42;
+}
+
+.most-popular-latest p {
+  font-size: 13px;
+  padding: 4px;
+}
+
+.most-popular-latest h3 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.most-popular-section ul {
+  padding: 8px;
+  text-indent: 0;
+}
+
+.most-popular-section li {
+  text-decoration: none;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 6px 5px;
+  font-size: 13px;
+  line-height: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.most-popular-section a {
+  padding-left: -10px;
+  text-decoration: none;
+  color: #555;
 }
 
 @media screen and (min-width: 768px) {
@@ -393,7 +494,7 @@ footer {
   background-color: #333;
 }
 
-.footer-social-links a{
+.footer-social-links a {
   width: 100%;
   height: 100%;
   background-color: #333;
@@ -401,7 +502,7 @@ footer {
   text-decoration: none;
 }
 
-.footer-nav-links a{
+.footer-nav-links a {
   margin-right: 10px;
   text-decoration: none;
   color: #aaa;
@@ -409,7 +510,13 @@ footer {
 }
 
 .footer-bottom {
+  font-size: 13px;
+  line-height: 20px;
   background-color: #000;
   padding: 39px 0;
   text-align: center;
+}
+
+.footer-logo {
+  height: 9px;
 }
