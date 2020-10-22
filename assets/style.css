@@ -282,6 +282,17 @@ body {
   background-color: #fa4;
 }
 
+.most-popular-image {
+  display: block;
+  position: relative;
+  background-image: url(../assets/images/most-popular-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 50%;
+}
+
 @media screen and (min-width: 768px) {
   .most-popular-section {
     grid-template-columns: repeat(2, 1fr);
