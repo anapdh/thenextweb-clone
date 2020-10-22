@@ -51,7 +51,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  border: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .tnw-link {
@@ -86,13 +86,13 @@ body {
 
 /* MAIN SECTION */
 
-/* .main-articles-section {
+.main-articles-section {
   grid-template-areas:
     "main-img-1"
     "main-img-2"
     "main-img-3";
   gap: 4px;
-} */
+}
 
 .main-articles-section {
   grid-template-columns: 1fr;
@@ -100,8 +100,8 @@ body {
 
 .main-img-1 {
   grid-area: main-img-1;
-  min-height: 206px;
-  height: auto;
+  /* min-height: 206px;
+  height: auto; */
 }
 
 .main-logo {
@@ -127,12 +127,12 @@ body {
 
 .main-img-2 {
   grid-area: main-img-2;
-  height: 206px;
+  /* height: 206px; */
 }
 
 .main-img-3 {
   grid-area: main-img-3;
-  height: 206px;
+  /* height: 206px; */
 }
 
 .main-articles {
@@ -140,20 +140,20 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  /* .main-articles-section {
+  .main-articles-section {
     grid-template-areas:
-      "main-img-1 main-img-2"
-      "main-img-1 main-img-3";
-  }*/
-    .main-articles-section {
+      "main-img-1 main-img-1 main-img-2"
+      "main-img-1 main-img-1 main-img-3";
+  }
+    /* .main-articles-section {
       grid-template-columns: 2fr 1fr;
       grid-template-rows: 200px 200px;
-    }
+    } */
 
-    .main-img-1 {
+    /* .main-img-1 {
       grid-column: 1 / 2;
       grid-row: 1 / 3;
-    }
+    } */
 
 } 
 
@@ -277,9 +277,15 @@ body {
 
 /* Most Popular Section */
 
+.most-popular-section {
+  padding: 8px;
+}
+
 .most-popular-articles {
   min-height: 688px;
-  background-color: #fa4;
+  padding: 8px;
+
+  background-color: #eee;
 }
 
 .most-popular-image {
@@ -306,9 +312,58 @@ body {
 }
 
 /* Latest Deals */
+
+.latest-deals-section {
+  padding: 8px;
+}
+
 .latest-deals-articles {
+  align-items: stretch;
   min-height: 88px;
-  background-color: #0f8;
+  padding: 8px;
+  background-color: #eee;
+}
+
+.latest-deals-img {
+  display: block;
+  min-width: 74px;
+  max-width: 74px;
+  height: 74px;
+  background-position: center;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.latest-deals-img-1 {
+  background-image: url(../assets/images/latest-deals-1.jpg);
+}
+
+.latest-deals-img-2 {
+  background-image: url(../assets/images/latest-deals-2.jpg);
+}
+
+.latest-deals-img-3 {
+  background-image: url(../assets/images/latest-deals-3.jpg);
+}
+
+.latest-deals-img-4 {
+  background-image: url(../assets/images/latest-deals-4.jpg);
+}
+
+.latest-deals-img-5 {
+  background-image: url(../assets/images/latest-deals-5.jpg);
+}
+
+.latest-deals-img-6 {
+  background-image: url(../assets/images/latest-deals-6.jpg);
+}
+
+.latest-deals-img-7 {
+  background-image: url(../assets/images/latest-deals-7.png);
+}
+
+.latest-deals-img-8 {
+  background-image: url(../assets/images/latest-deals-8.jpg);
 }
 
 /* FOOTER */
