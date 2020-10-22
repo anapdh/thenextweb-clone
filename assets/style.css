@@ -178,7 +178,7 @@ header {
 .most-popular-section,
 .latest-deals-wrapper {
   grid-template-columns: 1fr;
-  gap: 8px;
+  /* gap: 8px; */
 }
 
 .latest-news-articles {
@@ -302,8 +302,20 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -2;
   width: 100%;
   padding: 50% 5% 12px 12px;
+  margin-bottom: 2px;
+}
+
+.gradient-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#0000, #000);
 }
 
 .most-popular-image-1 {
@@ -361,10 +373,13 @@ header {
 
 
 .most-popular-latest {
+  justify-content: space-between;
   background-color: #fff4f2;
-  height: 96px;
-  padding: 8px;
   color: #f42;
+}
+
+.most-popular-latest div{
+  padding: 8px;
 }
 
 .most-popular-latest p {
@@ -379,20 +394,74 @@ header {
   padding: 4px;
 }
 
+.latest-img {
+  display: block;
+  width: 96px;
+  height: 96px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.latest-img-1 {
+  background-image: url(../assets/images/latest-1.jpg);
+}
+
+.latest-img-2 {
+  background-image: url(../assets/images/latest-2.png);
+}
+
+.latest-img-3 {
+  background-image: url(../assets/images/latest-3.png);
+}
+
+.latest-img-4 {
+  background-image: url(../assets/images/latest-4.png);
+}
+
+.latest-img-5 {
+  background-image: url(../assets/images/latest-5.png);
+}
+
+.latest-img-6 {
+  background-image: url(../assets/images/latest-6.jpg);
+}
+
+.latest-img-7 {
+  background-image: url(../assets/images/latest-7.jpg);
+}
+
+.latest-img-8 {
+  background-image: url(../assets/images/latest-8.jpg);
+}
+
+.latest-img-9 {
+  background-image: url(../assets/images/latest-9.png);
+}
+
+
 .most-popular-section ul {
   padding: 8px;
   text-indent: 0;
 }
 
 .most-popular-section li {
-  text-decoration: none;
-  list-style-type: disc;
   list-style-position: inside;
   padding: 6px 5px;
   font-size: 13px;
   line-height: 20px;
   border-bottom: 1px solid #eee;
 }
+
+.most-popular-section li::before {
+  display: inline-block;
+  content: "\2022";
+  width: 1em;
+  margin-left: -1em;
+  font-weight: bold;
+  color: #f42;
+}
+
 
 .most-popular-section a {
   padding-left: -10px;
@@ -422,7 +491,6 @@ header {
   align-items: stretch;
   min-height: 88px;
   padding: 8px;
-  background-color: #eee;
 }
 
 .latest-deals-img {
