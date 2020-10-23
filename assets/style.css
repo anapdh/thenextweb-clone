@@ -154,28 +154,6 @@ section {
   background-color: blue;
 }
 
-@media screen and (min-width: 768px) {
-  .main-articles-section {
-    grid-template-areas:
-      "main-img-1 main-img-1 main-img-2"
-      "main-img-1 main-img-1 main-img-3";
-  }
-    /* .main-articles-section {
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 200px 200px;
-    } */
-
-    /* .main-img-1 {
-      grid-column: 1 / 2;
-      grid-row: 1 / 3;
-    } */
-
-} 
-
-
-
-
-
 /* LATEST NEWS SECTION */
 
 .latest-news-wrapper,
@@ -188,8 +166,8 @@ section {
 
 .latest-news-articles {
   min-height: 88px;
-  background-color: #fa4;
-  align-items: center;
+  align-items: flex-start;
+  padding: 8px;
 }
 
 .latest-news-img {
@@ -200,6 +178,26 @@ section {
   background-position: center;
   background-size: cover;
   margin-right: 8px;
+}
+
+.latest-text-wrapper a {
+  text-decoration: none;
+  color: unset;
+  overflow: hidden;
+}
+
+.latest-text-wrapper h2,
+h4 {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.latest-text-wrapper p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #999;
 }
 
 .background-img1 {
@@ -233,6 +231,43 @@ section {
 .background-img8 {
   background-image: url(../assets/images/latest-news-8.png);
 }
+
+@media screen and (min-width: 768px) {
+  .main-articles-section {
+    grid-template-areas:
+      "main-img-1 main-img-1 main-img-2"
+      "main-img-1 main-img-1 main-img-3";
+  }
+
+    /* .main-articles-section {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 200px 200px;
+    } */
+
+    /* .main-img-1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    } */
+
+    .latest-news-articles,
+    .latest-deals-articles {
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 8px;
+    }
+
+    .latest-news-img {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      padding-top: 50%;
+      margin: 0;
+    }
+
+    .latest-text-wrapper h2 {
+      padding: 10px 0;
+    }
+} 
 
 @media screen and (min-width: 768px) {
   .latest-news-wrapper,
@@ -307,8 +342,14 @@ section {
   background-size: cover;
   z-index: -2;
   width: 100%;
-  padding: 50% 5% 12px 12px;
+  padding: 80% 5% 12px 12px;
   margin-bottom: 2px;
+}
+
+.most-popular-text {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
 }
 
 .gradient-cover {
