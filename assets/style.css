@@ -58,11 +58,15 @@ main {
 }
 
 .sub-headings {
-  font-size: 2em;
+  font-size: 28px;
   font-weight: bold;
   color: #f42;
   padding: 4px;
   margin: 0 0 14px;
+}
+
+.sub-headings:hover {
+  color: #000;
 }
 
 .f-bold {
@@ -243,6 +247,11 @@ h2 {
 .latest-news-articles {
   min-height: 88px;
   align-items: flex-start;
+}
+
+.latest-news-articles h2:hover {
+  color: #f42;
+  text-decoration: underline;
 }
 
 .price-tag {
@@ -584,9 +593,35 @@ h4 {
 
 /* Latest Deals */
 
+.latest-deals-section {
+  position: relative;
+}
+
+.see-all-deals {
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+  margin-top: -30px;
+  margin-right: 16px;
+}
+
+.see-all-deals a {
+  text-decoration: none;
+  color: #f42;
+}
+
+.see-all-deals a:hover {
+  color: #000;
+}
+
 .latest-deals-articles {
   align-items: flex-start;
   min-height: 88px;
+}
+
+.latest-deals-articles h4:hover {
+  color: #f42;
+  text-decoration: underline;
 }
 
 .latest-deals-img {
@@ -720,10 +755,6 @@ footer {
     display: none;
   }
 
-  .main-logo {
-    display: block;
-  }
-
   .most-popular-section {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -795,6 +826,11 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+
+  .main-logo {
+    display: block;
+  }
+
   .main-articles-section h1 {
     font-size: 56px;
     line-height: 56px;
