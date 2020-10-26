@@ -58,6 +58,7 @@ main {
 }
 
 .sub-headings {
+  display: inline-block;
   font-size: 28px;
   font-weight: bold;
   color: #f42;
@@ -249,7 +250,7 @@ h2 {
   align-items: flex-start;
 }
 
-.latest-news-articles h2:hover {
+.latest-news-heading:hover {
   color: #f42;
   text-decoration: underline;
 }
@@ -326,17 +327,21 @@ h4 {
 
 .latest-funding-options {
   flex-direction: column;
-  margin: 0 0 14px 8px;
+  margin: 0 0 16px 8px;
 }
 
 .latest-funding-options li {
   padding: 14px 0 0;
 }
 
-.latest-funding-section a {
+.funding-links {
   text-decoration: none;
   color: #f42;
   padding: 8px 0;
+}
+
+.funding-links:hover {
+  color: #000;
 }
 
 .latest-funding-articles {
@@ -599,18 +604,14 @@ h4 {
 
 .see-all-deals {
   position: absolute;
-  right: 0;
+  right: 16px;
+  top: 26px;
   font-size: 16px;
-  margin-top: -30px;
-  margin-right: 16px;
-}
-
-.see-all-deals a {
   text-decoration: none;
   color: #f42;
 }
 
-.see-all-deals a:hover {
+.see-all-deals:hover {
   color: #000;
 }
 
