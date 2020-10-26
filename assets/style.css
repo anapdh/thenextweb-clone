@@ -22,11 +22,11 @@ main {
 }
 
 .fab {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 5 Brands", sans-serif;
 }
 
 .fas {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", sans-serif;
 }
 
 .d-flex {
@@ -346,7 +346,7 @@ h4 {
   color: #fff;
 }
 
-.latest-funding-articles div:nth-of-type(1) {
+.price-wrapper {
   height: 60px;
   padding: 12px 0 0 80px;
   background-color: #f422;
@@ -354,8 +354,8 @@ h4 {
 
 .latest-funding-articles img {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 60px;
   margin: 10px;
