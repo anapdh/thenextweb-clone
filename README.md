@@ -35,7 +35,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://anapdh.github.io/TheNextWeb-Clone/)
+[Live Demo Link](https://anapdh.github.io/thenextweb-clone/)
 
 
 ## Authors
@@ -43,7 +43,7 @@
 👩‍💻 **Ana Paula Hübner**
 
 - GitHub: [@anapdh](https://github.com/anapdh)
-- LinkedIn: [Ana Paula Hübner](https://www.linkedin.com/in/ana-paula-h%C3%BCbner-7a9484181/)
+- LinkedIn: [Ana Paula Hübner](https://www.linkedin.com/anapdh)
 
 👨‍💻 **Breno Xavier**
 
