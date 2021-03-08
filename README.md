@@ -40,10 +40,11 @@
 
 ## Authors
 
-👩‍💻 **Ana Paula Hübner**
+👩🏼‍💻 **Ana Paula Hübner**
 
 - GitHub: [@anapdh](https://github.com/anapdh)
-- LinkedIn: [Ana Paula Hübner](https://www.linkedin.com/anapdh)
+- Twitter: [@dev_anahub](https://twitter.com/dev_anahub)
+- LinkedIn: [Ana Paula Hübner](https://www.linkedin.com/in/anapdh)
 
 👨‍💻 **Breno Xavier**
 
